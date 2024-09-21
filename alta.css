@@ -1,0 +1,157 @@
+body{
+    background: #23242a;
+
+}
+
+.op{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.op label{
+    font-size: 5ch;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    display: inline-block;
+}
+
+.op select{
+    font-size: 3ch;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    margin-bottom: 10px;
+    background: #233270;
+    border-radius: 10px;
+    margin-top: 5px;
+    border: none;
+    color: #fff;
+    font-weight: 100;
+}
+
+.op select option{
+    color: #fff;
+}
+
+.contorno{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #23242a;
+    
+    border: 1px solid #fff;
+    padding: 10px;
+    height: 80%;
+    border: none;
+}
+
+.contorno form{
+    position: absolute;
+    inset: 4px;
+    background: #1a285e;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0% 25% 0% 25%;
+    
+}
+
+#contenido-opcion1 form{
+    padding-top: 40px;
+    height: 150%;
+}
+
+#contenido-opcion2 form{
+    padding-top: 40px;
+    height: 150%;
+}
+
+
+.contorno form h1{
+    color: #fff;
+    font-weight: 550;
+    text-align: center;
+    letter-spacing: 0.2em;
+    margin: 5px;
+}
+
+.contorno form h2{
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.contorno form .contornoIngreso{
+    position: relative;
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.contorno form .contornoIngreso input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.contorno form .contornoIngreso span{
+    color: #fff;
+    position: absolute;
+    left: 0;
+    padding: 10px 10px 10px;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.contorno form .contornoIngreso input:valid ~ span,
+.contorno form .contornoIngreso input:focus ~ span{
+    transform: translateY(-80px);
+    font-size: 0.75em;
+}
+
+.contorno form .links{
+    color: #fff;
+    margin-top: 40px;   
+}
+
+.contorno form .links a{
+    color: #fff;
+}
+
+
+.contorno form .links a:hover{
+    color: #ff0000;
+}
+
+.contorno form input[type="submit"]{
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.8em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 10px;
+    text-align: center;
+}

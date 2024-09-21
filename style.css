@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0a0e23, #2c3358);
+}
+.contorno{
+    position: relative;
+    width: 380px;
+    height: 480px;
+    background: #1c1c1c;
+    border-radius: 8px;
+}
+
+.contorno form{
+    position: absolute;
+    inset: 4px;
+    background: #222;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.contorno form h1{
+    color: #fff;
+    font-weight: 550;
+    text-align: center;
+    letter-spacing: 0.2em;
+    margin: 15px;
+}
+
+.contorno form h2{
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 1.3em;
+}
+
+.contorno form .contornoIngreso{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+
+.contorno form .contornoIngreso input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.contorno form .contornoIngreso span{
+    color: #fff;
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.contorno form .contornoIngreso input:valid ~ span,
+.contorno form .contornoIngreso input:focus ~ span{
+    transform: translateY(-34px);
+    font-size: 0.75em;
+}
+
+.contorno form .links a{
+    color: #fff;
+    margin: 10px;
+    
+}
+
+
+.contorno form .links a:hover{
+    color: #9b7d7d;
+}
+
+.contorno form input[type="submit"]{
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.contorno form input[type="submit"]:active{
+    opacity: 0.8;
+
+}
