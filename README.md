@@ -55,7 +55,7 @@ The system is divided into two types of users: **clients** and **administrators*
 
     Run the project using a local PHP server or deploy it to a web server.
 
-##Future Enhancements
+## Future Enhancements
 
   - Implement more detailed reports for policy management.
   - Add user authentication using OAuth or other modern authentication methods.
